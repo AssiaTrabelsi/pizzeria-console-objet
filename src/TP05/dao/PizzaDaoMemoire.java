@@ -8,7 +8,7 @@ public class PizzaDaoMemoire implements IPizzaDao {
 	
 	public PizzaDaoMemoire() {
 		
-		pizzas[0] = new Pizza(0, "PEP", "Pépéroni", 12.50);
+		pizzas[0] = new Pizza(0, "PEP", "PÃ©pÃ©roni", 12.50);
 		pizzas[1] = new Pizza(1, "MAR", "Margherita", 14.00);
 		pizzas[2] = new Pizza(2, "REIN", "La reine", 11.50);
 		pizzas[3] = new Pizza(3, "FRO", "La 4 fromages", 12.50);
@@ -58,7 +58,17 @@ public class PizzaDaoMemoire implements IPizzaDao {
 	@Override
 	public boolean deletePizza(String codePizza) {
 		// TODO Auto-generated method stub
-		return false;
+		for (int i = 0; i < pizzas.length; i++) {
+			 pizzas[i].code.equals(codeAModifier)
+		if(pizzas[i].code.equals(codePizza))
+			{
+			pizza.setCode(null);
+			pizza.setNom(null);
+			pizza.setPrix(0);
+				
+				break;	
+			}}
+		return true;
 	}
 
 }
