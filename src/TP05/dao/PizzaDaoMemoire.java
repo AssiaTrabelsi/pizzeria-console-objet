@@ -59,7 +59,7 @@ public class PizzaDaoMemoire implements IPizzaDao {
 	public boolean deletePizza(String codePizza) {
 		// TODO Auto-generated method stub
 		for (int i = 0; i < pizzas.length; i++) {
-			 pizzas[i].code.equals(codeAModifier)
+			
 		if(pizzas[i].code.equals(codePizza))
 			{
 			pizza.setCode(null);
