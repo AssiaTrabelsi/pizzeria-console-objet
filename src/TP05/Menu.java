@@ -44,7 +44,7 @@ public class Menu {
 
 		boolean exit = false;
 		
-		//on a changer tabpizz par le dao
+		//on a changer tabpizz par le dao 
 
 		PizzaDaoMemoire dao = new PizzaDaoMemoire();
 
