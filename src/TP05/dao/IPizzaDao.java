@@ -1,10 +1,12 @@
 package TP05.dao;
 
+import java.util.List;
+
 import fr.pizzeria.console.Pizza;
 
 public interface IPizzaDao {
 	
-	Pizza[] findAllPizzas();
+	List<Pizza> findAllPizzas();
 
 	boolean saveNewPizza(Pizza pizza);
 

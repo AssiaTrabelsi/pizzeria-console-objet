@@ -1,10 +1,12 @@
 package TP05;
 
+import java.util.List;
 import java.util.Scanner;
+import fr.pizzeria.exeptions.*;
 
 import TP05.dao.PizzaDaoMemoire;
 import fr.pizzeria.console.Pizza;
-
+import fr.pizzeria.exeptions.*;
 public class ModifierPizzaOptionMenu extends OptionMenu{
 	
 	public String getLibelle()
@@ -12,18 +14,22 @@ public class ModifierPizzaOptionMenu extends OptionMenu{
 		return "modifier une pizza" ;
 	}
 
-	public boolean execute(PizzaDaoMemoire dao) {
+	public boolean execute(PizzaDaoMemoire dao) throws UpdatePizzaException  {
 
 		System.out.println("veuiller saisir le code à modifier");
 		Scanner sc = new Scanner(System.in);
 		String codeAModifier = sc.nextLine();
 		
 		// Je regarde si le code existe
+		
+		
 		boolean existe = false;
-		Pizza[] pizzas = dao.findAllPizzas();
-		for (int i = 0; i < pizzas.length; i++) {
+		List<Pizza> pizzas = dao.findAllPizzas();
+		for (int i = 0; i < pizzas.size(); i++) {
 
-			if (pizzas[i] != null && pizzas[i].code.equals(codeAModifier)) {
+			if (pizzas.get(i) != null && pizzas.get(i).code.equals(codeAModifier)) {
+				
+				
 				existe = true;
 			}
 		}
@@ -44,7 +50,11 @@ public class ModifierPizzaOptionMenu extends OptionMenu{
 			dao.updatePizza(codeAModifier, pizza);
 
 		}
+		else {
+			throw new UpdatePizzaException("le code n'existe pas") ;
+		}
 		return true;
 	}
 
+	
 }
