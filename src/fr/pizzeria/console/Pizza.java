@@ -2,13 +2,11 @@ package fr.pizzeria.console;
 
 public class Pizza {
 
-	
 	public int id;
-	public String code ;
-	public String nom ;
-	public double prix ;
-	
-	
+	public String code;
+	public String nom;
+	public double prix;
+
 	public Pizza(int id, String code, String nom, double prix) {
 		super();
 		this.id = id;
@@ -16,15 +14,35 @@ public class Pizza {
 		this.nom = nom;
 		this.prix = prix;
 	}
-	
-	public String toString()
-	{
-	
-	return code + " ->" + nom + "("+ prix+")";
-	
-	
+
+	public String getCode() {
+		return code;
 	}
-	
-	
-	
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public double getPrix() {
+		return prix;
+	}
+
+	public void setPrix(double prix) {
+		this.prix = prix;
+	}
+
+	public String toString() {
+
+		return code + " ->" + nom + "(" + prix + ")";
+
+	}
+
 }
