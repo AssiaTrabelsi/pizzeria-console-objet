@@ -1,11 +1,13 @@
 package fr.pizzeria.console;
 
+import TP05.CategoriePizza;
 public class Pizza {
 
 	public int id;
 	public String code;
 	public String nom;
 	public double prix;
+	CategoriePizza categorie ;
 
 	public Pizza(int id, String code, String nom, double prix) {
 		super();
@@ -13,6 +15,14 @@ public class Pizza {
 		this.code = code;
 		this.nom = nom;
 		this.prix = prix;
+	}
+
+	public CategoriePizza getCategorie() {
+		return categorie;
+	}
+
+	public void setCategorie(CategoriePizza categorie) {
+		this.categorie = categorie;
 	}
 
 	public String getCode() {
@@ -41,7 +51,7 @@ public class Pizza {
 
 	public String toString() {
 
-		return code + " ->" + nom + "(" + prix + ")";
+		return code + " ->" + nom + "(" + prix + ")"+ categorie;
 
 	}
 

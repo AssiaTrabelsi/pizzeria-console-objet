@@ -1,8 +1,6 @@
 package TP05;
 
-public class CategoriePizza {
-	
-	/*public enum CategoriePizza
+	public  enum CategoriePizza {
 		
 		VIANDE("viande"),
 		POISSON("Poisson"),
@@ -22,5 +20,5 @@ public class CategoriePizza {
 	
 	{
 		return categ ;
-	} */
+	} 
 }
