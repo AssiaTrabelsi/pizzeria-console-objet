@@ -1,4 +1,4 @@
- package TP05.dao;
+package TP05.dao;
 
 import fr.pizzeria.console.Pizza;
 import java.util.*;
@@ -29,13 +29,14 @@ public class PizzaDaoMemoire implements IPizzaDao {
 		 * new Pizza(4, "CAN", "La cannibale", 12.50); pizzas[5] = new Pizza(5, "SAV",
 		 * "La savoyarde", 13.00); pizzas[6] = new Pizza(6, "ORI", "L'orientale",
 		 * 12.50); pizzas[7] = new Pizza(7, "IND", "L'indienne", 12.50);
-		 */}
+		 */
+	}
 
-	@Override
+	
 	/*
 	 * public Pizza[] findAllPizzas() { return pizzas; }
 	 */
-
+	@Override
 	public List<Pizza> findAllPizzas() {
 
 		return pizzas;
