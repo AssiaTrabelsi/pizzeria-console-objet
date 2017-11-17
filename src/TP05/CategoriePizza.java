@@ -22,3 +22,4 @@ package TP05;
 		return categ ;
 	} 
 }
+ 

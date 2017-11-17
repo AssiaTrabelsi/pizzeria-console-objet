@@ -42,7 +42,7 @@ public class Pizza {
 	}
 
 	public double getPrix() {
-		return prix;
+		return prix; 
 	}
 
 	public void setPrix(double prix) {

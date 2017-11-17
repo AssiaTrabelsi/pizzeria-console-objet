@@ -24,7 +24,7 @@ public class Menu {
 
 	public Menu(String titre) {
 		super();
-		this.titre = titre;
+		this.titre = titre; 
 		
 		
 		actions.put(1,new ListerPizzasOptionMenu());

@@ -8,7 +8,7 @@ public class PizzeriaAdminConsoleApp {
 
 	public static void main(String[] args) throws Exception {
 		Menu menu = new Menu("*****Pizzeria Administration*****");
-		menu.afficher();
+		menu.afficher(); 
 		/*
 		boolean exit = false;
 		// TODO Auto-generated method stub

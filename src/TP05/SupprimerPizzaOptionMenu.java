@@ -39,6 +39,6 @@ public class SupprimerPizzaOptionMenu extends OptionMenu {
 		dao.deletePizza(codedelete);
 		
 		return true;
-	}
+	} 
 
 }
