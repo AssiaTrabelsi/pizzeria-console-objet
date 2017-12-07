@@ -3,7 +3,7 @@ package fr.pizzeria.ihm;
 import java.util.List;
 import java.util.Scanner;
 
-import fr.pizzeria.dao.PizzaDaoMemoire;
+import fr.pizzeria.dao.IPizzaDao;
 import fr.pizzeria.exeptions.*;
 import fr.pizzeria.model.Pizza;
 
@@ -16,7 +16,7 @@ public class SupprimerPizzaOptionMenu extends OptionMenu {
 	}
 	
 	
-	public boolean execute(PizzaDaoMemoire dao) throws DeletePizzaException{
+	public boolean execute(IPizzaDao dao) throws DeletePizzaException{
 
 		List<Pizza> pizzas = dao.findAllPizzas();
 		

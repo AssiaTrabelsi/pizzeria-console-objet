@@ -2,7 +2,8 @@ package fr.pizzeria.ihm;
 
 import java.util.Scanner;
 
-import fr.pizzeria.dao.PizzaDaoMemoire;
+import fr.pizzeria.dao.IPizzaDao;
+import fr.pizzeria.model.CategoriePizza;
 import fr.pizzeria.model.Pizza;
 
 public class AjouterPizzaOptionMenu extends OptionMenu {
@@ -12,7 +13,7 @@ public class AjouterPizzaOptionMenu extends OptionMenu {
 	}
 	
 	@Override
-	public boolean execute(PizzaDaoMemoire dao) {
+	public boolean execute(IPizzaDao dao) {
 
 		System.out.println("veuiller saisir le code");
 		Scanner sc = new Scanner(System.in);
@@ -25,7 +26,10 @@ public class AjouterPizzaOptionMenu extends OptionMenu {
 		String prix = sc.nextLine();
 		double prixdb = Double.parseDouble(prix);
 		
-		Pizza pizza = new Pizza(0, code, nom, prixdb);
+		System.out.println("veuiller choisir la categorie (1.VIANDE, 2.POISSON, 3.SANS_VIANDE)");
+		int categorie = Integer.parseInt(sc.nextLine());
+		
+		Pizza pizza = new Pizza(0, code, nom, prixdb, CategoriePizza.getCategorieByIndex(categorie));
 		
 		dao.saveNewPizza(pizza);
 		return true;

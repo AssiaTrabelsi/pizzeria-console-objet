@@ -8,18 +8,29 @@ package fr.pizzeria.model;
 		
 	
 	
-	private String categ;
+		private String categorie = "";
 	
-	CategoriePizza(String categ)
-	{
-		this.categ=categ ;
+	CategoriePizza(String categorie) {
+		this.categorie = categorie;
 	}
-
 	
-	public String toString()
+	public String getCategorie() {
+		return this.categorie;
+	}
 	
-	{
-		return categ ;
-	} 
+	public static CategoriePizza getCategorieByIndex(int index) {
+		if(index == 1) {
+			return VIANDE;
+		}
+		else if(index == 2) {
+			return POISSON;
+		}
+		else if(index == 3) {
+			return SANS_VIANDE;
+		}
+		else {
+			return VIANDE;
+		}
+	}
 }
  

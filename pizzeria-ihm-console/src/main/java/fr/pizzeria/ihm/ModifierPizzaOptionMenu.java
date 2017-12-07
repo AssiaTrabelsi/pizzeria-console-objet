@@ -3,8 +3,9 @@ package fr.pizzeria.ihm;
 import java.util.List;
 import java.util.Scanner;
 import fr.pizzeria.exeptions.*;
+import fr.pizzeria.model.CategoriePizza;
 import fr.pizzeria.model.Pizza;
-import fr.pizzeria.dao.PizzaDaoMemoire;
+import fr.pizzeria.dao.IPizzaDao;
 
 public class ModifierPizzaOptionMenu extends OptionMenu{
 	
@@ -13,7 +14,7 @@ public class ModifierPizzaOptionMenu extends OptionMenu{
 		return "modifier une pizza" ;
 	}
 
-	public boolean execute(PizzaDaoMemoire dao) throws UpdatePizzaException  {
+	public boolean execute(IPizzaDao dao) throws UpdatePizzaException  {
 
 		System.out.println("veuiller saisir le code � modifier");
 		Scanner sc = new Scanner(System.in);
@@ -35,17 +36,19 @@ public class ModifierPizzaOptionMenu extends OptionMenu{
 
 		if (existe) {
 			System.out.println("veuiller saisir le new code");
-			Scanner sc1 = new Scanner(System.in);
-			String code1 = sc.nextLine();
+			String code = sc.nextLine();
 
 			System.out.println("veuiller saisir le new nom");
-			String nom1 = sc.nextLine();
+			String nom = sc.nextLine();
 
 			System.out.println("veuiller saisir le new prix");
-			String prix1 = sc.nextLine();
-			double prixdb1 = Double.parseDouble(prix1);
+			double prix = Double.parseDouble(sc.nextLine());
+			
+			System.out.println("veuiller choisir la categorie (1.VIANDE, 2.POISSON, 3.SANS_VIANDE)");
+			Integer categorie = Integer.parseInt(sc.nextLine());
+			
+			Pizza pizza = new Pizza(0, code, nom, prix, CategoriePizza.getCategorieByIndex(categorie));
 
-			Pizza pizza = new Pizza(0, code1, nom1, prixdb1);
 			dao.updatePizza(codeAModifier, pizza);
 
 		}

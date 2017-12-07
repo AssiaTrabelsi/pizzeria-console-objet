@@ -13,5 +13,13 @@
 			<groupId>${project.groupId}</groupId>
 			<artifactId>pizzeria-model</artifactId>
 		</dependency>
+		
+
+		<dependency>
+			<groupId>org.mariadb.jdbc</groupId>
+			<artifactId>mariadb-java-client</artifactId>
+			<version>1.1.7</version>
+		</dependency>
+	
 	</dependencies>
 </project>

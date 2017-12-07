@@ -1,8 +1,6 @@
 package fr.pizzeria.ihm;
 
-import fr.pizzeria.dao.PizzaDaoMemoire;
-import fr.pizzeria.exeptions.UpdatePizzaException;
-import fr.pizzeria.model.Pizza;
+import fr.pizzeria.dao.IPizzaDao;
 
 public abstract class OptionMenu {
 
@@ -12,5 +10,5 @@ public abstract class OptionMenu {
 
 	public abstract String getLibelle();
 
-	public abstract boolean execute(PizzaDaoMemoire dao) throws Exception;
+	public abstract boolean execute(IPizzaDao dao) throws Exception;
 } 
