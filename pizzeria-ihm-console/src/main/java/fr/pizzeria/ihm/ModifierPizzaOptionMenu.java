@@ -3,10 +3,9 @@ package fr.pizzeria.ihm;
 import java.util.List;
 import java.util.Scanner;
 import fr.pizzeria.exeptions.*;
+import fr.pizzeria.model.Pizza;
+import fr.pizzeria.dao.PizzaDaoMemoire;
 
-import TP05.dao.PizzaDaoMemoire;
-import fr.pizzeria.console.Pizza;
-import fr.pizzeria.exeptions.*;
 public class ModifierPizzaOptionMenu extends OptionMenu{
 	
 	public String getLibelle()

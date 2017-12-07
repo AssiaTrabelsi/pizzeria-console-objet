@@ -1,8 +1,8 @@
-package TP05.dao;
+package fr.pizzeria.dao;
 
 import java.util.List;
 
-import fr.pizzeria.console.Pizza;
+import fr.pizzeria.model.Pizza;
 
 public interface IPizzaDao {
 	

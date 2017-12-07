@@ -1,4 +1,4 @@
-package fr.pizzeria.ihm;
+package fr.pizzeria.model;
 
 	public  enum CategoriePizza {
 		

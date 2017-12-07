@@ -2,15 +2,16 @@ package fr.pizzeria.ihm;
 
 import java.util.Scanner;
 
-import TP05.dao.PizzaDaoMemoire;
-import fr.pizzeria.console.Pizza;
+import fr.pizzeria.dao.PizzaDaoMemoire;
+import fr.pizzeria.model.Pizza;
 
 public class AjouterPizzaOptionMenu extends OptionMenu {
 
 	public String getLibelle() {
 		return "Ajouter une nouvelle pizza";
 	}
-
+	
+	@Override
 	public boolean execute(PizzaDaoMemoire dao) {
 
 		System.out.println("veuiller saisir le code");
@@ -30,5 +31,6 @@ public class AjouterPizzaOptionMenu extends OptionMenu {
 		return true;
 
 	}
+
 	
 }

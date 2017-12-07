@@ -1,8 +1,8 @@
 package fr.pizzeria.ihm;
 
-import TP05.dao.PizzaDaoMemoire;
-import fr.pizzeria.console.Pizza;
+import fr.pizzeria.dao.PizzaDaoMemoire;
 import fr.pizzeria.exeptions.UpdatePizzaException;
+import fr.pizzeria.model.Pizza;
 
 public abstract class OptionMenu {
 

@@ -2,14 +2,10 @@ package fr.pizzeria.ihm;
 
 import java.util.Scanner;
 
-import com.sun.javafx.collections.MappingChange.Map;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
-import TP05.dao.PizzaDaoMemoire;
-import fr.pizzeria.console.*;
+import fr.pizzeria.dao.PizzaDaoMemoire;
 import fr.pizzeria.exeptions.DeletePizzaException;
 import fr.pizzeria.exeptions.SavePizzaException;
 import fr.pizzeria.exeptions.UpdatePizzaException;

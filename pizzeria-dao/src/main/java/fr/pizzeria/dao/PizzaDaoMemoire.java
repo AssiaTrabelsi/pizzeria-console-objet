@@ -1,7 +1,8 @@
-package TP05.dao;
+package fr.pizzeria.dao;
 
-import fr.pizzeria.console.Pizza;
 import java.util.*;
+
+import fr.pizzeria.model.Pizza;
 
 public class PizzaDaoMemoire implements IPizzaDao {
 
@@ -11,7 +12,7 @@ public class PizzaDaoMemoire implements IPizzaDao {
 
 	public PizzaDaoMemoire() {
 
-		pizzas.add(new Pizza(0, "PEP", "Pépéroni", 12.50));
+		pizzas.add(new Pizza(0, "PEP", "Pï¿½pï¿½roni", 12.50));
 		pizzas.add(new Pizza(1, "MAR", "Margherita", 14.00));
   
 		pizzas.add(new Pizza(2, "REIN", "La reine", 11.50));
@@ -23,7 +24,7 @@ public class PizzaDaoMemoire implements IPizzaDao {
 		pizzas.add(new Pizza(7, "IND", "L'indienne", 12.50));
 
 		/*
-		 * pizzas[0] = new Pizza(0, "PEP", "Pépéroni", 12.50); pizzas[1] = new Pizza(1,
+		 * pizzas[0] = new Pizza(0, "PEP", "Pï¿½pï¿½roni", 12.50); pizzas[1] = new Pizza(1,
 		 * "MAR", "Margherita", 14.00); pizzas[2] = new Pizza(2, "REIN", "La reine",
 		 * 11.50); pizzas[3] = new Pizza(3, "FRO", "La 4 fromages", 12.50); pizzas[4] =
 		 * new Pizza(4, "CAN", "La cannibale", 12.50); pizzas[5] = new Pizza(5, "SAV",

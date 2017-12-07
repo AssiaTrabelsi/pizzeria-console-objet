@@ -1,6 +1,4 @@
-package fr.pizzeria.console;
-
-import fr.pizzeria.ihm.CategoriePizza;
+package fr.pizzeria.model;
 
 public class Pizza {
 
