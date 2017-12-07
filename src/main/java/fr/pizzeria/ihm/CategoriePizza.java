@@ -1,4 +1,4 @@
-package TP05;
+package fr.pizzeria.ihm;
 
 	public  enum CategoriePizza {
 		

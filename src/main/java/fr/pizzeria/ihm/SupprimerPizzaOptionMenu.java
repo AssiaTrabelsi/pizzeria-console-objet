@@ -1,4 +1,4 @@
-package TP05;
+package fr.pizzeria.ihm;
 
 import java.util.List;
 import java.util.Scanner;
@@ -34,7 +34,7 @@ public class SupprimerPizzaOptionMenu extends OptionMenu {
 			}
 		}
 		if (!existe) {
-			throw new DeletePizzaException("le pizza à supprimer n'existe pas");
+			throw new DeletePizzaException("le pizza ï¿½ supprimer n'existe pas");
 		}
 		dao.deletePizza(codedelete);
 		

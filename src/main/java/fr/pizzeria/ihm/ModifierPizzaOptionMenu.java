@@ -1,4 +1,4 @@
-package TP05;
+package fr.pizzeria.ihm;
 
 import java.util.List;
 import java.util.Scanner;
@@ -16,7 +16,7 @@ public class ModifierPizzaOptionMenu extends OptionMenu{
 
 	public boolean execute(PizzaDaoMemoire dao) throws UpdatePizzaException  {
 
-		System.out.println("veuiller saisir le code à modifier");
+		System.out.println("veuiller saisir le code ï¿½ modifier");
 		Scanner sc = new Scanner(System.in);
 		String codeAModifier = sc.nextLine();
 		

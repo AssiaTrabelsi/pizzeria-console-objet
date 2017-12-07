@@ -13,5 +13,6 @@ public interface IPizzaDao {
 	boolean updatePizza(String codePizza, Pizza pizza);
 
 	boolean deletePizza(String codePizza);
+	
 }
   

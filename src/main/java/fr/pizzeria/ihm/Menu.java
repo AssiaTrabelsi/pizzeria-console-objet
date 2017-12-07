@@ -1,4 +1,4 @@
-package TP05;
+package fr.pizzeria.ihm;
 
 import java.util.Scanner;
 
@@ -81,7 +81,7 @@ public class Menu {
 
 				case "3":
 
-					System.out.println("Mise à jour d'une pizza::");
+					System.out.println("Mise ï¿½ jour d'une pizza::");
 					//actions[3].execute(dao);
 					
 					actions.get(2).execute(dao) ;

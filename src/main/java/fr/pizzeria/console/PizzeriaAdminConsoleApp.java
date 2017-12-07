@@ -2,7 +2,8 @@ package fr.pizzeria.console;
 
 import java.util.Scanner;
 
-import TP05.Menu;
+import fr.pizzeria.ihm.Menu;
+
 
 public class PizzeriaAdminConsoleApp {
 
@@ -13,7 +14,7 @@ public class PizzeriaAdminConsoleApp {
 		boolean exit = false;
 		// TODO Auto-generated method stub
 
-		pizzas[0] = new Pizza(0, "PEP", "Pépéroni", 12.50);
+		pizzas[0] = new Pizza(0, "PEP", "Pï¿½pï¿½roni", 12.50);
 		pizzas[1] = new Pizza(1, "MAR", "Margherita", 14.00);
 		pizzas[2] = new Pizza(2, "REIN", "La reine", 11.50);
 		pizzas[3] = new Pizza(3, "FRO", "La 4 fromages", 12.50);
@@ -25,7 +26,7 @@ public class PizzeriaAdminConsoleApp {
 		System.out.println("*****Pizzeria Administration*****");
 		System.out.println("1.Lister les pizzas");
 		System.out.println("2.Ajouter une nouvelle pizza");
-		System.out.println("3.Mettre à jour une pizza");
+		System.out.println("3.Mettre ï¿½ jour une pizza");
 		System.out.println("4.Supprimer une pizza");
 		System.out.println("99.Au revoir");
 
@@ -48,7 +49,7 @@ public class PizzeriaAdminConsoleApp {
 
 			case "3":
 
-				System.out.println("Mise à jour d'une pizza::");
+				System.out.println("Mise ï¿½ jour d'une pizza::");
 
 				update();
 
@@ -73,7 +74,7 @@ public class PizzeriaAdminConsoleApp {
 
 		for (int i = 0; i < pizzas.length; i++)
 			System.out.println(pizzas[i]);
-		System.out.println("le menu principal est ensuite affiché");
+		System.out.println("le menu principal est ensuite affichï¿½");
 	}
 
 	private static void ajoutPizza() {
@@ -106,7 +107,7 @@ public class PizzeriaAdminConsoleApp {
 
 	private static void update() {
 
-		System.out.println("veuiller saisir le code à modifier");
+		System.out.println("veuiller saisir le code ï¿½ modifier");
 		Scanner sc = new Scanner(System.in);
 		String code = sc.nextLine();
 

@@ -1,4 +1,4 @@
-package TP05;
+package fr.pizzeria.ihm;
 
 import java.util.List;
 
@@ -25,7 +25,7 @@ public class ListerPizzasOptionMenu extends OptionMenu {
 				System.out.println(pizzas.get(i));
 			}
 		
-		System.out.println("le menu principal est ensuite affiché");
+		System.out.println("le menu principal est ensuite affichï¿½");
 		return true;
 	}
 

@@ -13,7 +13,7 @@ public class PizzaDaoMemoire implements IPizzaDao {
 
 		pizzas.add(new Pizza(0, "PEP", "Pépéroni", 12.50));
 		pizzas.add(new Pizza(1, "MAR", "Margherita", 14.00));
-
+  
 		pizzas.add(new Pizza(2, "REIN", "La reine", 11.50));
 		pizzas.add(new Pizza(3, "FRO", "La 4 fromages", 12.50));
 

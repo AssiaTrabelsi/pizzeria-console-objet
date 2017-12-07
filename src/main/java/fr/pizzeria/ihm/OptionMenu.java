@@ -1,4 +1,4 @@
-package TP05;
+package fr.pizzeria.ihm;
 
 import TP05.dao.PizzaDaoMemoire;
 import fr.pizzeria.console.Pizza;

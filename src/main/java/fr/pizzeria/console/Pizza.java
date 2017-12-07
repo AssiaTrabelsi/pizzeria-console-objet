@@ -1,6 +1,7 @@
 package fr.pizzeria.console;
 
-import TP05.CategoriePizza;
+import fr.pizzeria.ihm.CategoriePizza;
+
 public class Pizza {
 
 	public int id;
